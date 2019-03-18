@@ -1,0 +1,661 @@
+/* font-family: 'IBM Plex Sans Condensed', sans-serif;
+font-family: 'IBM Plex Serif', serif; */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.scroll {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    font-size: 35px;
+    color: green;
+    cursor: pointer;
+    opacity: 0;
+    transition: 0.5s;
+    z-index: 10;
+}
+
+.scroll.active {
+    opacity: 1;
+}
+
+header {
+    height: 120vh;
+    background-image: url(img/piwo2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center bottom 60%;
+    color: white;
+}
+
+header .wrap {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+nav {
+    /* background-color: #666; */
+    position: relative;
+    height: 20vh;
+}
+
+nav img {
+    display: block;
+    position: absolute;
+    top: 30%;
+    left: 7%;
+    animation: logo 1s linear infinite alternate;
+}
+
+@keyframes logo {
+    0% {
+        transform: rotateY(0);
+    }
+
+    100% {
+        transform: rotateY(90deg);
+    }
+}
+
+div .menu {
+    width: 50%;
+    position: absolute;
+    right: 7%;
+    top: 50%;
+}
+
+nav ul li {
+    float: left;
+    list-style-type: none;
+    width: 16%;
+}
+
+nav ul li a {
+    text-decoration: none;
+    display: block;
+    color: #9a8575;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+}
+
+nav ul li a:hover {
+    color: white;
+    border-bottom: 0px solid #9a8575;
+}
+
+.title {
+    /* background-color: #666; */
+    margin-left: 6%;
+    margin-top: 6%;
+}
+
+.title p {
+    color: #9a8575;
+    text-transform: uppercase;
+}
+
+.title h1 {
+    font-family: 'IBM Plex Serif', serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 60px;
+}
+
+.title span {
+    font-style: normal;
+    font-weight: bold;
+}
+
+.title h2 {
+    font-family: 'IBM Plex Serif', serif;
+    color: #7d7670;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 20px;
+}
+
+.title button {
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin: 30px 0 0 0;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    text-align: center;
+    padding: 15px 40px;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.title button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* SECTION1 */
+.left {
+    float: left;
+    width: 35%;
+    height: 70vh;
+    padding: 20px;
+    height: 70vh;
+    background-image: url(img/chmiel2.png);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: left bottom;
+}
+
+.wraper h2 {
+    font-family: 'IBM Plex Serif', serif;
+    font-size: 36px;
+    font-weight: 500;
+    margin: 20% 0 0 20%;
+}
+
+.wraper h3 {
+    font-family: 'IBM Plex Serif', serif;
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+    margin-left: 20%;
+    line-height: 140%;
+}
+
+.right {
+    float: left;
+    width: 65%;
+    height: 70vh;
+    background-image: url(img/chmiel1.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 60%;
+}
+
+.process {
+    margin-top: 15%;
+}
+
+.content {
+    float: left;
+    width: 50%;
+}
+
+.rectangle {
+    float: left;
+    width: 10%;
+    height: 20vh;
+}
+
+.text {
+    float: left;
+    width: 70%;
+    height: 20vh;
+    padding: 0 0 0 20px;
+}
+
+.text h3 {
+    font-family: 'IBM Plex Serif', serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    margin-left: 0;
+}
+
+.text p {
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #7d7670;
+    font-size: 16px;
+    line-height: 1.5;
+    padding-top: 15px;
+}
+
+.motto {
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.motto h1 {
+    font-weight: 500;
+    font-style: normal;
+    font-family: 'IBM Plex Serif', serif;
+    color: #382c28;
+    font-size: 36px;
+    line-height: 1.2;
+}
+
+.motto p {
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'IBM Plex Serif', serif;
+    color: #7d7670;
+    font-size: 18px;
+    line-height: 1.4;
+    padding-top: 20px;
+}
+
+/* SECTION GLASSES */
+section.product {
+    padding-bottom: 100px;
+    /* transition: 1s; */
+}
+
+.glasses {
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.glas {
+    float: left;
+    width: 25%;
+    transform: translateX(100vw);
+    transition: 0.8s;
+}
+
+.glas.active {
+    transform: translateX(0);
+}
+
+.glas h3 {
+    font-family: 'IBM Plex Serif', serif;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 500;
+    font-style: normal;
+    padding: 15px 0 15px 0;
+}
+
+.glas p {
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #7d7670;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+p.prize {
+    color: #cc5720;
+    font-weight: bold;
+    font-style: normal;
+    font-family: 'IBM Plex Serif', serif;
+    font-size: 20px;
+    padding: 15px 0 0 15px;
+}
+
+/* SECTION WORK */
+section.work {
+    background-image: url(img/piwo3.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 85vh;
+    position: relative;
+}
+
+div.working {
+    color: white;
+    position: absolute;
+    top: 26%;
+    left: 12%;
+}
+
+.working h4 {
+    font-weight: 500;
+    font-style: normal;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+.working h1 {
+    font-style: normal;
+    font-family: 'IBM Plex Serif', serif;
+    font-size: 60px;
+    line-height: 1.4;
+    letter-spacing: 2px;
+}
+
+h1.kursywa {
+    font-style: italic;
+}
+
+.working button {
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin: 30px 0 0 0;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    text-align: center;
+    padding: 15px 40px;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.working button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* SECTION PRODUCTION */
+section.production {
+    background-image: url(img/chmiel3.png);
+    background-position: right bottom;
+    background-size: 110%;
+    background-repeat: no-repeat;
+}
+
+div.opakowanie {
+    width: 80vw;
+    margin: 0 auto;
+    padding: 120px 0 120px 0;
+}
+
+div.brew {
+    height: 356px;
+    width: 25%;
+    float: left;
+    overflow: hidden;
+}
+
+.brew img {
+    height: 100%;
+    margin-left: 20px;
+}
+
+div.opis {
+    float: left;
+    width: 50%;
+    padding: 30px 0 0 30px;
+}
+
+div.opis h1 {
+    font-weight: 500;
+    font-style: normal;
+    font-family: 'IBM Plex Serif', serif;
+    color: #382c28;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 0px;
+}
+
+div.opis h3 {
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'IBM Plex Serif', serif;
+    color: #7e7058;
+    font-size: 18px;
+    line-height: 1.4;
+    letter-spacing: 0px;
+    margin: 20px 0 20px 0;
+}
+
+div.opis p {
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #7d7670;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0px;
+}
+
+/* SECTION PROCENT */
+.procent {
+    background-image: url(img/piwo4.jpg);
+    background-position: top center;
+    background-size: cover;
+}
+
+.procents-wrap {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.procents {
+    float: left;
+    width: 25%;
+    height: 50vh;
+    text-align: center;
+}
+
+.procents h3 {
+    font-weight: 500;
+    font-style: normal;
+    font-family: 'IBM Plex Serif', serif;
+    color: #382c28;
+    font-size: 60px;
+    margin-top: 40%;
+}
+
+.procents p {
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'IBM Plex Serif', serif;
+    color: #7e7058;
+    font-size: 18px;
+    line-height: 1.4;
+    letter-spacing: 0px;
+}
+
+/* SECTION PIWOWAR */
+.piwowar {
+    position: relative;
+    background-image: url(img/chmiel4.png), url(img/gosciu.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: top left, bottom right;
+    background-size: 100%, 40%;
+}
+
+.piwowar-content {
+    position: absolute;
+    width: 28%;
+    top: 25%;
+    left: 25%;
+}
+
+.piwowar-content p:nth-child(1) {
+    font-weight: 500;
+    font-style: normal;
+    font-family: 'IBM Plex Serif', serif;
+    color: #382c28;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 0px;
+}
+
+.piwowar-content p:nth-child(2) {
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'IBM Plex Serif', serif;
+    color: #cc5720;
+    font-size: 18px;
+    line-height: 1.4;
+    letter-spacing: 0px;
+    margin-bottom: 50px;
+}
+
+.piwowar-content p:nth-child(3) {
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #7d7670;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0px;
+    padding-bottom: 35px;
+}
+
+.piwowar-content p:nth-child(5) {
+    font-weight: 500;
+    font-style: normal;
+    font-family: 'IBM Plex Serif', serif;
+    color: #000000;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0px;
+    margin-top: 15px;
+}
+
+.piwowar-content p:nth-child(6) {
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #7d7670;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0px;
+}
+
+/* FOOTER */
+footer {
+    width: 100%;
+    background-color: #201D1C;
+}
+
+.wrap-footer {
+    width: 80%;
+    height: 50vh;
+    margin: 0 auto;
+    color: white;
+    padding-top: 10vh;
+}
+
+.logo {
+    float: left;
+    width: 25%;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.logo p {
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #7d7670;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+p.title-footer {
+    font-weight: 700;
+    font-style: normal;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    /* padding-top: 15px; */
+    margin-bottom: 30px;
+}
+
+.hours {
+    float: left;
+    width: 25%;
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #7d7670;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0px;
+}
+
+.adres {
+    float: left;
+    width: 25%;
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #7d7670;
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 0px;
+}
+
+.adres span {
+    text-decoration: none;
+    font-weight: 400;
+    font-style: normal;
+    color: #cc5720;
+}
+
+.adres p:nth-child(2) {
+    margin-bottom: 20px;
+}
+
+.newsletter {
+    float: left;
+    width: 25%;
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #7d7670;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0px;
+}
+
+.newsletter input {
+    width: 100%;
+    height: 35px;
+    border: 2px solid #842318;
+    border-radius: 30px;
+    padding: 25px;
+    background-color: transparent;
+    margin-top: 30px;
+}
+
+.newsletter button {
+    border: 2px solid #CC5720;
+    width: 60%;
+    font-size: 14px;
+    margin-top: 30px;
+    background-color: #CC5720;
+    padding: 20px 30px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.newsletter button:hover {
+    color: #CC5720;
+    background-color: #fff;
+}
